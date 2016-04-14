@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Untitled</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <!-- sample angular code -->
+    <div class="container" ng-controller="addStudentController">
+      <form class="form" ng-submit="addStudent()">
+      	<input ng-model="student.firstName" type="text" placeholder="Enter First Name"
+      	class="form-control"></input>
+      	 <input ng-model="student.lastName" type="text" placeholder="Enter Last Name"
+      	class="form-control"></input>
+      	 <input ng-model="student.year" type="text" placeholder="Enter Year"
+      	class="form-control"></input>
+      	<button type="submit" class="button btn-success">Add Student</button>
+      </form>
+    </div>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+    <script type="text/javascript" src="js/services.js"></script>
+
+  </body>
+</html>
